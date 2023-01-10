@@ -15,7 +15,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace MicroRabbit.Infra.IoC
 {
-    public static class DependecyContainer
+    public static class DependencyContainer
     {
         public static IServiceCollection RegisterServices(this IServiceCollection services)
         {
