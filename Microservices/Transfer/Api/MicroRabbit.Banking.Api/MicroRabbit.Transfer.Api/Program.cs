@@ -46,8 +46,8 @@ ConfigureEventBus(app);
 
 app.Run();
 
-void ConfigureEventBus(WebApplication app)
+void ConfigureEventBus(IApplicationBuilder app)
 {
-    var eventBus = app.Services.GetRequiredService<IEventBus>();
+    var eventBus = app.ApplicationServices.GetRequiredService<IEventBus>();
     eventBus.Subscribe<TransferCreatedEvent, TransferEventHandler>();
 }

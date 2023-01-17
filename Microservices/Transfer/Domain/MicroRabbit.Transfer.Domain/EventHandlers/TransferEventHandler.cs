@@ -16,6 +16,7 @@ namespace MicroRabbit.Transfer.Domain.EventHandlers
         }
         public  Task Handle(TransferCreatedEvent @event)
         {
+            Console.WriteLine($"----------------------------------------------{@event.Amount}");
             return Task.CompletedTask;
         }
     }
